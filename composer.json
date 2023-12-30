@@ -69,12 +69,12 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Spatie\\MediaLibrary\\": "src"
+            "niyazialpay\\MediaLibrary\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\MediaLibrary\\Tests\\": "tests"
+            "niyazialpay\\MediaLibrary\\Tests\\": "tests"
         }
     },
     "config": {
