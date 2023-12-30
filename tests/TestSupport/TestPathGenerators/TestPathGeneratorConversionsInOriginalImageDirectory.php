@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestPathGenerators;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport\TestPathGenerators;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGenerator;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
+use niyazialpay\MediaLibrary\Support\PathGenerator\PathGenerator;
 
 class TestPathGeneratorConversionsInOriginalImageDirectory extends DefaultPathGenerator implements PathGenerator
 {

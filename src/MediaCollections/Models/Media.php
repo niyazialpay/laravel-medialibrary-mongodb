@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models;
+namespace niyazialpay\MediaLibrary\MediaCollections\Models;
 
 use DateTimeInterface;
 use Illuminate\Contracts\Mail\Attachable;
@@ -8,29 +8,29 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\MorphTo;
+use MongoDB\Laravel\Eloquent\Model;
+use MongoDB\Laravel\Relations\BelongsTo;
+use MongoDB\Laravel\Relations\MorphTo;
 use Illuminate\Mail\Attachment;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\HtmlableMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
-use Spatie\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
-use Spatie\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\ConversionCollection;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use niyazialpay\MediaLibrary\HasMedia;
+use niyazialpay\MediaLibrary\MediaCollections\Filesystem;
+use niyazialpay\MediaLibrary\MediaCollections\HtmlableMedia;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Concerns\CustomMediaProperties;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Concerns\HasUuid;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Concerns\IsSorted;
+use niyazialpay\MediaLibrary\ResponsiveImages\RegisteredResponsiveImages;
+use niyazialpay\MediaLibrary\Support\File;
+use niyazialpay\MediaLibrary\Support\MediaLibraryPro;
+use niyazialpay\MediaLibrary\Support\TemporaryDirectory;
+use niyazialpay\MediaLibrary\Support\UrlGenerator\UrlGenerator;
+use niyazialpay\MediaLibrary\Support\UrlGenerator\UrlGeneratorFactory;
+use niyazialpay\MediaLibraryPro\Models\TemporaryUpload;
 
 /**
  * @property string $uuid

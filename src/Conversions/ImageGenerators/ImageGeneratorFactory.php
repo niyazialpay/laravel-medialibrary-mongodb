@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\ImageGenerators;
+namespace niyazialpay\MediaLibrary\Conversions\ImageGenerators;
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class ImageGeneratorFactory
 {

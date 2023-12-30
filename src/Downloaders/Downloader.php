@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Downloaders;
+namespace niyazialpay\MediaLibrary\Downloaders;
 
 interface Downloader
 {

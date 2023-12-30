@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGenerator;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\PathGenerator\PathGenerator;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 
 class TestPathGenerator implements PathGenerator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests;
+namespace niyazialpay\MediaLibrary\Tests;
 
 use CreateTemporaryUploadsTable;
 use Dotgetenv\Dotgetenv;
@@ -8,18 +8,18 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\File;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionQueued;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionsOnOtherDisk;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionUsingModelInstance;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultipleConversions;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
+use niyazialpay\MediaLibrary\MediaLibraryServiceProvider;
+use niyazialpay\MediaLibrary\Support\MediaLibraryPro;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversion;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionQueued;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionsOnOtherDisk;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithConversionUsingModelInstance;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMorphMap;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithMultipleConversions;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithoutMediaConversions;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithPreviewConversion;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModelWithResponsiveImages;
 use ZipArchive;
 
 abstract class TestCase extends Orchestra
@@ -144,7 +144,7 @@ abstract class TestCase extends Orchestra
         TestModel::create(['name' => 'test']);
 
         if (MediaLibraryPro::isInstalled()) {
-            include_once __DIR__.'/../vendor/spatie/laravel-medialibrary-pro/database/migrations/create_temporary_uploads_table.stub';
+            include_once __DIR__.'/../vendor/niyazialpay/laravel-medialibrary-pro/database/migrations/create_temporary_uploads_table.stub';
             (new CreateTemporaryUploadsTable())->up();
         }
 

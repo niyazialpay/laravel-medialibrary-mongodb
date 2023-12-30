@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Downloaders;
+namespace niyazialpay\MediaLibrary\Downloaders;
 
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
 
 class DefaultDownloader implements Downloader
 {
@@ -10,7 +10,7 @@ class DefaultDownloader implements Downloader
     {
         $context = stream_context_create([
             'http' => [
-                'header' => 'User-Agent: Spatie MediaLibrary',
+                'header' => 'User-Agent: niyazialpay MediaLibrary',
             ],
         ]);
 

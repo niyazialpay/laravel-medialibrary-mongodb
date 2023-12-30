@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models\Observers;
+namespace niyazialpay\MediaLibrary\MediaCollections\Models\Observers;
 
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Conversions\FileManipulator;
+use niyazialpay\MediaLibrary\MediaCollections\Filesystem;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaObserver
 {

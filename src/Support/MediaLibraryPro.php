@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace niyazialpay\MediaLibrary\Support;
 
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FunctionalityNotAvailable;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FunctionalityNotAvailable;
+use niyazialpay\MediaLibraryPro\Models\TemporaryUpload;
 
 class MediaLibraryPro
 {

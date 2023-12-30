@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Support\ImageFactory;
+use niyazialpay\MediaLibrary\Support\ImageFactory;
 
 test('loading an image uses the correct driver', function () {
     config(['media-library.image_driver' => 'imagick']);

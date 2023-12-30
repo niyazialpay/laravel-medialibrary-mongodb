@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\ImageGenerators;
+namespace niyazialpay\MediaLibrary\Conversions\ImageGenerators;
 
 use Illuminate\Support\Collection;
 use Imagick;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
 
 class Pdf extends ImageGenerator
 {
@@ -14,7 +14,7 @@ class Pdf extends ImageGenerator
 
         $pageNumber = $conversion ? $conversion->getPdfPageNumber() : 1;
 
-        (new \Spatie\PdfToImage\Pdf($file))->setPage($pageNumber)->saveImage($imageFile);
+        (new \niyazialpay\PdfToImage\Pdf($file))->setPage($pageNumber)->saveImage($imageFile);
 
         return $imageFile;
     }
@@ -25,7 +25,7 @@ class Pdf extends ImageGenerator
             return false;
         }
 
-        if (! class_exists(\Spatie\PdfToImage\Pdf::class)) {
+        if (! class_exists(\niyazialpay\PdfToImage\Pdf::class)) {
             return false;
         }
 

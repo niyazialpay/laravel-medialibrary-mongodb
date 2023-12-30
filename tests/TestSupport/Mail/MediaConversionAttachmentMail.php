@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\Mail;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport\Mail;
 
 use Illuminate\Mail\Mailable;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class MediaConversionAttachmentMail extends Mailable
 {

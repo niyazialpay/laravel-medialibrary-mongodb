@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestModels;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport\TestModels;
 
-use Spatie\Image\Enums\Fit;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\Image\Enums\Fit;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class TestModelWithPreviewConversion extends TestModel
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
+use niyazialpay\MediaLibrary\MediaCollections\Filesystem;
 
 beforeEach(function () {
     $this->filesystem = app()->make(Filesystem::class);

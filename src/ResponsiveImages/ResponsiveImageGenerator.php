@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages;
+namespace niyazialpay\MediaLibrary\ResponsiveImages;
 
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGeneratedEvent;
-use Spatie\MediaLibrary\ResponsiveImages\Exceptions\InvalidTinyJpg;
-use Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
-use Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
-use Spatie\MediaLibrary\Support\ImageFactory;
-use Spatie\MediaLibrary\Support\TemporaryDirectory;
-use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\MediaCollections\Filesystem;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGeneratedEvent;
+use niyazialpay\MediaLibrary\ResponsiveImages\Exceptions\InvalidTinyJpg;
+use niyazialpay\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
+use niyazialpay\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use niyazialpay\MediaLibrary\Support\File;
+use niyazialpay\MediaLibrary\Support\FileNamer\FileNamer;
+use niyazialpay\MediaLibrary\Support\ImageFactory;
+use niyazialpay\MediaLibrary\Support\TemporaryDirectory;
+use niyazialpay\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class ResponsiveImageGenerator
 {

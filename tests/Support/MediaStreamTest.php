@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\MediaStream;
-use Spatie\TemporaryDirectory\TemporaryDirectory;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\MediaStream;
+use niyazialpay\TemporaryDirectory\TemporaryDirectory;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 
 beforeEach(function () {

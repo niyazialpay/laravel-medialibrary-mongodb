@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\ImageGenerators;
+namespace niyazialpay\MediaLibrary\Conversions\ImageGenerators;
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
 
 class Image extends ImageGenerator
 {

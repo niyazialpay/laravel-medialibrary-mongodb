@@ -2,20 +2,20 @@
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\ImageGeneratorFactory;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\UnreachableUrl;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Tests\TestSupport\RenameOriginalFileNamer;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 it('can add an file to the default collection', function () {
@@ -268,7 +268,7 @@ it('will throw an exception when trying to add a non existing key from a request
 });
 
 it('can add a remote file to the media library', function () {
-    $url = 'https://spatie.be/docs/laravel-medialibrary/v9/images/header.jpg';
+    $url = 'https://niyazialpay.be/docs/laravel-medialibrary/v9/images/header.jpg';
 
     $media = $this->testModel
         ->addMediaFromUrl($url)
@@ -309,7 +309,7 @@ it('can natively copy a remote file from the same disk to the media library', fu
 });
 
 it('can add a remote file with a space in the name to the media library', function () {
-    $url = 'http://spatie.github.io/laravel-medialibrary/tests/TestSupport/testfiles/test%20with%20space.jpg';
+    $url = 'http://niyazialpay.github.io/laravel-medialibrary/tests/TestSupport/testfiles/test%20with%20space.jpg';
 
     $media = $this->testModel
         ->addMediaFromUrl($url)
@@ -319,7 +319,7 @@ it('can add a remote file with a space in the name to the media library', functi
 });
 
 it('will thrown an exception when a remote file could not be added', function () {
-    $url = 'https://docs.spatie.be/images/medialibrary/thisonedoesnotexist.jpg';
+    $url = 'https://docs.niyazialpay.be/images/medialibrary/thisonedoesnotexist.jpg';
 
     $this->expectException(UnreachableUrl::class);
 
@@ -329,7 +329,7 @@ it('will thrown an exception when a remote file could not be added', function ()
 });
 
 it('will throw an exception when a remote file has an invalid mime type', function () {
-    $url = 'https://spatie.be/docs/laravel-medialibrary/v9/images/header.jpg';
+    $url = 'https://niyazialpay.be/docs/laravel-medialibrary/v9/images/header.jpg';
 
     $this->expectException(MimeTypeNotAllowed::class);
 

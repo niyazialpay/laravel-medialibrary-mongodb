@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Exceptions;
+namespace niyazialpay\MediaLibrary\MediaCollections\Exceptions;
 
 use Exception;
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 
 class MediaCannotBeDeleted extends Exception
 {

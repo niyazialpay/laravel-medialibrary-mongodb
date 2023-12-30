@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class TestUuidPathGenerator extends TestPathGenerator
 {

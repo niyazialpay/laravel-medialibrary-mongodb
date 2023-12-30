@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models\Collections;
+namespace niyazialpay\MediaLibrary\MediaCollections\Models\Collections;
 
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Collection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key
- * @template TModel of \Spatie\MediaLibrary\MediaCollections\Models\Media
+ * @template TModel of \niyazialpay\MediaLibrary\MediaCollections\Models\Media
  *
  * @extends Collection<TKey, TModel>
  */

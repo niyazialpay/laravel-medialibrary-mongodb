@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Events;
+namespace niyazialpay\MediaLibrary\Conversions\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class ConversionWillStartEvent
 {

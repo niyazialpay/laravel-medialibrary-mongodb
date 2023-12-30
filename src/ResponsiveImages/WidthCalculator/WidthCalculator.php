@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages\WidthCalculator;
+namespace niyazialpay\MediaLibrary\ResponsiveImages\WidthCalculator;
 
 use Illuminate\Support\Collection;
 

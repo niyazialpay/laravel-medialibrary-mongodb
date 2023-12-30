@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\MediaCollections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestUuidPathGenerator;
+use niyazialpay\MediaLibrary\MediaCollections\MediaCollection;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestUuidPathGenerator;
 
 it('can get the sum of all media item sizes', function () {
     $mediaItem = $this
@@ -29,7 +29,7 @@ it('can get the sum of all media item sizes', function () {
 
 it('can get registered media collections', function () {
     // the 'avatar' media collection is registered in
-    // \Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel->registerMediaCollections()
+    // \niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel->registerMediaCollections()
     $collections = $this->testModel->getRegisteredMediaCollections();
 
     expect($collections)->toHaveCount(1);

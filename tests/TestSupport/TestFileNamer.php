@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport;
 
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Support\FileNamer\FileNamer;
 
 class TestFileNamer extends FileNamer
 {

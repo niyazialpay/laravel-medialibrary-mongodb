@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace niyazialpay\MediaLibrary\Support;
 
-use Spatie\Image\Drivers\ImageDriver;
-use Spatie\Image\Image;
+use niyazialpay\Image\Drivers\ImageDriver;
+use niyazialpay\Image\Image;
 
 class ImageFactory
 {

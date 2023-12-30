@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\MediaLibrary\Conversions\Events\ConversionHasBeenCompletedEvent;
-use Spatie\MediaLibrary\Conversions\Events\ConversionWillStartEvent;
-use Spatie\MediaLibrary\MediaCollections\Events\CollectionHasBeenClearedEvent;
+use niyazialpay\MediaLibrary\Conversions\Events\ConversionHasBeenCompletedEvent;
+use niyazialpay\MediaLibrary\Conversions\Events\ConversionWillStartEvent;
+use niyazialpay\MediaLibrary\MediaCollections\Events\CollectionHasBeenClearedEvent;
 
 beforeEach(function () {
     Event::fake();

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport;
 
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\ImageGenerator;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\ImageGenerator;
 
 class TestImageGenerator extends ImageGenerator
 {

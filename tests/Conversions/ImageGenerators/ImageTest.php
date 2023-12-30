@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Image;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\Image;
 
 it('can convert an image', function () {
     $imageGenerator = new Image();

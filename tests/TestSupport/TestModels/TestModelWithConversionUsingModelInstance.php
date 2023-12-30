@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\TestSupport\TestModels;
+namespace niyazialpay\MediaLibrary\Tests\TestSupport\TestModels;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class TestModelWithConversionUsingModelInstance extends TestModelWithConversion
 {

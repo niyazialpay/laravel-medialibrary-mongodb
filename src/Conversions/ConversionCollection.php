@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace niyazialpay\MediaLibrary\Conversions;
 
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidConversion;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 /**
  * @template TKey of array-key
@@ -55,7 +55,7 @@ class ConversionCollection extends Collection
             return;
         }
 
-        /** @var \Spatie\MediaLibrary\HasMedia $model */
+        /** @var \niyazialpay\MediaLibrary\HasMedia $model */
         $model = new $modelName();
 
         /*

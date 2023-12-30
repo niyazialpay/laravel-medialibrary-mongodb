@@ -1,8 +1,8 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
-use Spatie\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
+use niyazialpay\MediaLibrary\Conversions\ConversionCollection;
+use niyazialpay\MediaLibrary\Support\PathGenerator\DefaultPathGenerator;
+use niyazialpay\MediaLibrary\Support\UrlGenerator\DefaultUrlGenerator;
 
 beforeEach(function () {
     $this->config = app('config');

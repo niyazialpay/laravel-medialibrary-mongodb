@@ -3,11 +3,11 @@
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\FileRemover\FileBaseFileRemover;
-use Spatie\MediaLibrary\Tests\Support\PathGenerator\CustomDirectoryStructurePathGenerator;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
-use Spatie\MediaLibrary\Tests\TestSupport\TestPathGenerator;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\FileRemover\FileBaseFileRemover;
+use niyazialpay\MediaLibrary\Tests\Support\PathGenerator\CustomDirectoryStructurePathGenerator;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestPathGenerator;
 
 it('will remove the files when deleting an object that has media', function () {
     $media = $this->testModel->addMedia($this->getTestJpg())->toMediaCollection('images');

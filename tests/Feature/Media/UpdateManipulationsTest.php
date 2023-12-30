@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestModel;
 
 it('will create derived files when manipulations have changed', function () {
     $testModelClass = new class() extends TestModel
@@ -14,7 +14,7 @@ it('will create derived files when manipulations have changed', function () {
 
     $testModel = $testModelClass::find($this->testModel->id);
 
-    /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $media */
+    /** @var \niyazialpay\MediaLibrary\MediaCollections\Models\Media $media */
     $media = $testModel->addMedia($this->getTestJpg())->toMediaCollection('images');
 
     touch($media->getPath('update_test'), time() - 1);
@@ -46,7 +46,7 @@ it('will not create derived files when manipulations have not changed', function
 
     $testModel = $testModelClass::find($this->testModel->id);
 
-    /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $media */
+    /** @var \niyazialpay\MediaLibrary\MediaCollections\Models\Media $media */
     $media = $testModel->addMedia($this->getTestJpg())->toMediaCollection('images');
 
     $media->manipulations = [

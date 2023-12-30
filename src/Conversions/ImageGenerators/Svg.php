@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\ImageGenerators;
+namespace niyazialpay\MediaLibrary\Conversions\ImageGenerators;
 
 use Illuminate\Support\Collection;
 use Imagick;
 use ImagickPixel;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
 
 class Svg extends ImageGenerator
 {

@@ -2,9 +2,9 @@
 
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
-use Spatie\MediaLibrary\Support\MediaStream;
-use Spatie\MediaLibrary\Tests\Feature\S3Integration\S3TestPathGenerator;
-use Spatie\TemporaryDirectory\TemporaryDirectory;
+use niyazialpay\MediaLibrary\Support\MediaStream;
+use niyazialpay\MediaLibrary\Tests\Feature\S3Integration\S3TestPathGenerator;
+use niyazialpay\TemporaryDirectory\TemporaryDirectory;
 
 beforeEach(function () {
     if (! canTestS3()) {

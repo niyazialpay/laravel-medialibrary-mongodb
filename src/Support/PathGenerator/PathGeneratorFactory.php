@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\PathGenerator;
+namespace niyazialpay\MediaLibrary\Support\PathGenerator;
 
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidPathGenerator;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use MongoDB\Laravel\Relations\Relation;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidPathGenerator;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class PathGeneratorFactory
 {

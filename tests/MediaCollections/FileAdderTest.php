@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Tests\MediaCollections;
+namespace niyazialpay\MediaLibrary\Tests\MediaCollections;
 
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
+use niyazialpay\MediaLibrary\MediaCollections\FileAdder;
 
 it('sanitizes filenames correctly', function () {
     /** @var FileAdder $adder */

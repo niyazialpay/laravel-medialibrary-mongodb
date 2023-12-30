@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator;
+namespace niyazialpay\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator;
 
-use Spatie\MediaLibrary\Support\ImageFactory;
+use niyazialpay\MediaLibrary\Support\ImageFactory;
 
 class Blurred implements TinyPlaceholderGenerator
 {

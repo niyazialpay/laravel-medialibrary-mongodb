@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
+use niyazialpay\MediaLibrary\MediaCollections\MediaRepository;
+use niyazialpay\MediaLibrary\Tests\TestSupport\TestModels\TestCustomMediaModel;
 
 it('can use a custom media model', function () {
     config()->set('media-library.media_model', TestCustomMediaModel::class);

@@ -1,25 +1,25 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace niyazialpay\MediaLibrary\MediaCollections;
 
 use Closure;
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Traits\Macroable;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
-use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\UnknownType;
-use Spatie\MediaLibrary\MediaCollections\File as PendingFile;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\RemoteFile;
-use Spatie\MediaLibraryPro\Models\TemporaryUpload;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\Image as ImageGenerator;
+use niyazialpay\MediaLibrary\HasMedia;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\DiskDoesNotExist;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileDoesNotExist;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileIsTooBig;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileUnacceptableForCollection;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\UnknownType;
+use niyazialpay\MediaLibrary\MediaCollections\File as PendingFile;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\ResponsiveImages\Jobs\GenerateResponsiveImagesJob;
+use niyazialpay\MediaLibrary\Support\File;
+use niyazialpay\MediaLibrary\Support\RemoteFile;
+use niyazialpay\MediaLibraryPro\Models\TemporaryUpload;
 use Symfony\Component\HttpFoundation\File\File as SymfonyFile;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\UrlGenerator;
+namespace niyazialpay\MediaLibrary\Support\UrlGenerator;
 
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use niyazialpay\MediaLibrary\Conversions\ConversionCollection;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidUrlGenerator;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
 
 class UrlGeneratorFactory
 {

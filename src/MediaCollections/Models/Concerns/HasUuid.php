@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Models\Concerns;
+namespace niyazialpay\MediaLibrary\MediaCollections\Models\Concerns;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Str;
 
 trait HasUuid
@@ -10,7 +10,7 @@ trait HasUuid
     public static function bootHasUuid()
     {
         static::creating(function (Model $model) {
-            /** @var \Spatie\MediaLibrary\MediaCollections\Models\Media $model */
+            /** @var \niyazialpay\MediaLibrary\MediaCollections\Models\Media $model */
             if (empty($model->uuid)) {
                 $model->uuid = (string) Str::uuid();
             }

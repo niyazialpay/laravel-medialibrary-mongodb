@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\FileRemover;
+namespace niyazialpay\MediaLibrary\Support\FileRemover;
 
 use Exception;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\MediaCollections\Filesystem;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Filesystem;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class DefaultFileRemover implements FileRemover
 {

@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Video;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\Video;
 
 it('can convert a video', function () {
     $imageGenerator = new Video();

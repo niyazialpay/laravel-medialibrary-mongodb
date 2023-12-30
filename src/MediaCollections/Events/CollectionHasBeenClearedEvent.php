@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Events;
+namespace niyazialpay\MediaLibrary\MediaCollections\Events;
 
 use Illuminate\Queue\SerializesModels;
-use Spatie\MediaLibrary\HasMedia;
+use niyazialpay\MediaLibrary\HasMedia;
 
 class CollectionHasBeenClearedEvent
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace niyazialpay\MediaLibrary\Support;
 
 use Illuminate\Support\Str;
-use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use niyazialpay\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class TemporaryDirectory
 {

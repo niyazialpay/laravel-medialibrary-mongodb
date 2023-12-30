@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections\Exceptions;
+namespace niyazialpay\MediaLibrary\MediaCollections\Exceptions;
 
 use Exception;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGenerator;
+use niyazialpay\MediaLibrary\Support\PathGenerator\PathGenerator;
 
 class InvalidPathGenerator extends Exception
 {

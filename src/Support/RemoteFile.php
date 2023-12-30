@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support;
+namespace niyazialpay\MediaLibrary\Support;
 
 class RemoteFile
 {

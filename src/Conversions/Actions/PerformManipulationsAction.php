@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions\Actions;
+namespace niyazialpay\MediaLibrary\Conversions\Actions;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Spatie\Image\Exceptions\UnsupportedImageFormat;
-use Spatie\Image\Image;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\Image\Exceptions\UnsupportedImageFormat;
+use niyazialpay\Image\Image;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class PerformManipulationsAction
 {

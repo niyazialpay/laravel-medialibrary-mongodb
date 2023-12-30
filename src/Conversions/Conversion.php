@@ -1,14 +1,14 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace niyazialpay\MediaLibrary\Conversions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Conditionable;
-use Spatie\ImageOptimizer\OptimizerChainFactory;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\FileNamer\FileNamer;
+use niyazialpay\ImageOptimizer\OptimizerChainFactory;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\FileNamer\FileNamer;
 
-/** @mixin \Spatie\Image\Drivers\ImageDriver */
+/** @mixin \niyazialpay\Image\Drivers\ImageDriver */
 class Conversion
 {
     use Conditionable;

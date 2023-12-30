@@ -1,17 +1,17 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace niyazialpay\MediaLibrary;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\MediaLibrary\Conversions\Commands\RegenerateCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\CleanCommand;
-use Spatie\MediaLibrary\MediaCollections\Commands\ClearCommand;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
-use Spatie\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
-use Spatie\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
+use niyazialpay\LaravelPackageTools\Package;
+use niyazialpay\LaravelPackageTools\PackageServiceProvider;
+use niyazialpay\MediaLibrary\Conversions\Commands\RegenerateCommand;
+use niyazialpay\MediaLibrary\MediaCollections\Commands\CleanCommand;
+use niyazialpay\MediaLibrary\MediaCollections\Commands\ClearCommand;
+use niyazialpay\MediaLibrary\MediaCollections\MediaRepository;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Observers\MediaObserver;
+use niyazialpay\MediaLibrary\ResponsiveImages\TinyPlaceholderGenerator\TinyPlaceholderGenerator;
+use niyazialpay\MediaLibrary\ResponsiveImages\WidthCalculator\WidthCalculator;
 
 class MediaLibraryServiceProvider extends PackageServiceProvider
 {

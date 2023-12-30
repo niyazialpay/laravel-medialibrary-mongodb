@@ -1,21 +1,21 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace niyazialpay\MediaLibrary;
 
-use Illuminate\Database\Eloquent\Relations\MorphMany;
+use MongoDB\Laravel\Relations\MorphMany;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\MediaCollections\FileAdder;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
- * @mixin \Illuminate\Database\Eloquent\Model
+ * @mixin \MongoDB\Laravel\Eloquent\Model
  *
  * @method void prepareToAttachMedia(Media $media, FileAdder $fileAdder)
  *
  * @property bool $registerMediaConversionsUsingModelInstance
- * @property ?\Spatie\MediaLibrary\MediaCollections\MediaCollection $mediaCollections
+ * @property ?\niyazialpay\MediaLibrary\MediaCollections\MediaCollection $mediaCollections
  */
 interface HasMedia
 {

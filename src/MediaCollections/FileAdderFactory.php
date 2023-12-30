@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace niyazialpay\MediaLibrary\MediaCollections;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Illuminate\Support\Collection;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
-use Spatie\MediaLibrary\Support\RemoteFile;
-use Spatie\MediaLibraryPro\Dto\PendingMediaItem;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\RequestDoesNotHaveFile;
+use niyazialpay\MediaLibrary\Support\RemoteFile;
+use niyazialpay\MediaLibraryPro\Dto\PendingMediaItem;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class FileAdderFactory

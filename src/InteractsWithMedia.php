@@ -1,30 +1,30 @@
 <?php
 
-namespace Spatie\MediaLibrary;
+namespace niyazialpay\MediaLibrary;
 
 use DateTimeInterface;
-use Illuminate\Database\Eloquent\Relations\MorphMany;
+use MongoDB\Laravel\Relations\MorphMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\File;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\Conversion;
-use Spatie\MediaLibrary\Downloaders\DefaultDownloader;
-use Spatie\MediaLibrary\MediaCollections\Events\CollectionHasBeenClearedEvent;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeUpdated;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
-use Spatie\MediaLibrary\MediaCollections\FileAdder;
-use Spatie\MediaLibrary\MediaCollections\FileAdderFactory;
-use Spatie\MediaLibrary\MediaCollections\MediaCollection;
-use Spatie\MediaLibrary\MediaCollections\MediaRepository;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\MediaLibraryPro;
-use Spatie\MediaLibraryPro\PendingMediaLibraryRequestHandler;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Downloaders\DefaultDownloader;
+use niyazialpay\MediaLibrary\MediaCollections\Events\CollectionHasBeenClearedEvent;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidBase64Data;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\InvalidUrl;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeUpdated;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\MimeTypeNotAllowed;
+use niyazialpay\MediaLibrary\MediaCollections\FileAdder;
+use niyazialpay\MediaLibrary\MediaCollections\FileAdderFactory;
+use niyazialpay\MediaLibrary\MediaCollections\MediaCollection;
+use niyazialpay\MediaLibrary\MediaCollections\MediaRepository;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\MediaLibraryPro;
+use niyazialpay\MediaLibraryPro\PendingMediaLibraryRequestHandler;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 trait InteractsWithMedia
@@ -108,7 +108,7 @@ trait InteractsWithMedia
      * Add multiple files from a request by keys.
      *
      * @param  string[]  $keys
-     * @return \Spatie\MediaLibrary\MediaCollections\FileAdder[]
+     * @return \niyazialpay\MediaLibrary\MediaCollections\FileAdder[]
      */
     public function addMultipleMediaFromRequest(array $keys): Collection
     {
@@ -118,7 +118,7 @@ trait InteractsWithMedia
     /**
      * Add all files from a request.
      *
-     * @return \Spatie\MediaLibrary\MediaCollections\FileAdder[]
+     * @return \niyazialpay\MediaLibrary\MediaCollections\FileAdder[]
      */
     public function addAllMediaFromRequest(): Collection
     {
@@ -130,7 +130,7 @@ trait InteractsWithMedia
      *
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
+     * @throws \niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
      */
     public function addMediaFromUrl(string $url, array|string ...$allowedMimeTypes): FileAdder
     {
@@ -182,7 +182,7 @@ trait InteractsWithMedia
      * Add a base64 encoded file to the media library.
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
+     * @throws \niyazialpay\MediaLibrary\MediaCollections\Exceptions\FileCannotBeAdded
      * @throws InvalidBase64Data
      */
     public function addMediaFromBase64(string $base64data, array|string ...$allowedMimeTypes): FileAdder
@@ -473,7 +473,7 @@ trait InteractsWithMedia
      * You may also pass a media object.
      *
      *
-     * @throws \Spatie\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted
+     * @throws \niyazialpay\MediaLibrary\MediaCollections\Exceptions\MediaCannotBeDeleted
      */
     public function deleteMedia(int|string|Media $mediaId): void
     {

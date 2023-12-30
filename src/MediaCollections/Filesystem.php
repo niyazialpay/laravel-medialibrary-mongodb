@@ -1,19 +1,19 @@
 <?php
 
-namespace Spatie\MediaLibrary\MediaCollections;
+namespace niyazialpay\MediaLibrary\MediaCollections;
 
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Spatie\MediaLibrary\Conversions\ConversionCollection;
-use Spatie\MediaLibrary\Conversions\FileManipulator;
-use Spatie\MediaLibrary\MediaCollections\Events\MediaHasBeenAddedEvent;
-use Spatie\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Spatie\MediaLibrary\Support\File;
-use Spatie\MediaLibrary\Support\FileRemover\FileRemoverFactory;
-use Spatie\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
-use Spatie\MediaLibrary\Support\RemoteFile;
+use niyazialpay\MediaLibrary\Conversions\ConversionCollection;
+use niyazialpay\MediaLibrary\Conversions\FileManipulator;
+use niyazialpay\MediaLibrary\MediaCollections\Events\MediaHasBeenAddedEvent;
+use niyazialpay\MediaLibrary\MediaCollections\Exceptions\DiskCannotBeAccessed;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\Support\File;
+use niyazialpay\MediaLibrary\Support\FileRemover\FileRemoverFactory;
+use niyazialpay\MediaLibrary\Support\PathGenerator\PathGeneratorFactory;
+use niyazialpay\MediaLibrary\Support\RemoteFile;
 
 class Filesystem
 {

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGeneratedEvent;
+use niyazialpay\MediaLibrary\ResponsiveImages\Events\ResponsiveImagesGeneratedEvent;
 
 beforeEach(function () {
     $this->fileName = 'test';

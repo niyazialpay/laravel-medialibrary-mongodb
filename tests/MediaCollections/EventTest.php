@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Event;
-use Spatie\MediaLibrary\MediaCollections\Events\MediaHasBeenAddedEvent;
+use niyazialpay\MediaLibrary\MediaCollections\Events\MediaHasBeenAddedEvent;
 
 it('will fire the media added event', function () {
     Event::fake();

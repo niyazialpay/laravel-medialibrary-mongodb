@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\ImageGenerators\Pdf;
+use niyazialpay\MediaLibrary\Conversions\ImageGenerators\Pdf;
 
 it('can convert a pdf', function () {
     $imageGenerator = new Pdf();

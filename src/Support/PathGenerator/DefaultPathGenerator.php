@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\PathGenerator;
+namespace niyazialpay\MediaLibrary\Support\PathGenerator;
 
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
 class DefaultPathGenerator implements PathGenerator
 {

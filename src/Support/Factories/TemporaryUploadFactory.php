@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\MediaLibrary\Support\Factories;
+namespace niyazialpay\MediaLibrary\Support\Factories;
 
 class TemporaryUploadFactory
 {

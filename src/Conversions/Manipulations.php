@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\MediaLibrary\Conversions;
+namespace niyazialpay\MediaLibrary\Conversions;
 
-use Spatie\Image\Drivers\ImageDriver;
+use niyazialpay\Image\Drivers\ImageDriver;
 
-/** @mixin \Spatie\Image\Drivers\ImageDriver */
+/** @mixin \niyazialpay\Image\Drivers\ImageDriver */
 class Manipulations
 {
     protected array $manipulations = [];

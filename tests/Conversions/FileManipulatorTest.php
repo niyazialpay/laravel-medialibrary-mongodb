@@ -1,7 +1,7 @@
 <?php
 
-use Spatie\MediaLibrary\Conversions\Actions\PerformManipulationsAction;
-use Spatie\MediaLibrary\Conversions\Conversion;
+use niyazialpay\MediaLibrary\Conversions\Actions\PerformManipulationsAction;
+use niyazialpay\MediaLibrary\Conversions\Conversion;
 
 beforeEach(function () {
     $this->conversionName = 'test';

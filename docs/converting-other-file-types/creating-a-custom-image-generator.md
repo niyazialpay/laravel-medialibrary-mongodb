@@ -96,7 +96,7 @@ If the generator only needs to be applied to one of your models you can override
 ```php
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use MongoDB\Laravel\Eloquent\Model;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\Interfaces\HasMedia;
 
