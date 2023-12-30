@@ -2,8 +2,8 @@
 
 namespace niyazialpay\MediaLibrary;
 
-use spatie\LaravelPackageTools\Package;
-use spatie\LaravelPackageTools\PackageServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 use niyazialpay\MediaLibrary\Conversions\Commands\RegenerateCommand;
 use niyazialpay\MediaLibrary\MediaCollections\Commands\CleanCommand;
 use niyazialpay\MediaLibrary\MediaCollections\Commands\ClearCommand;
