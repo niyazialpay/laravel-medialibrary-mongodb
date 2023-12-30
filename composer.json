@@ -87,7 +87,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                "niyazialpay\\MediaLibrary\\MediaLibraryServiceProvider"
             ]
         }
     },
