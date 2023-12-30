@@ -62,7 +62,7 @@ class Media extends Model implements Attachable, Htmlable, Responsable
     use HasUuid;
     use IsSorted;
 
-    protected $table = 'media';
+    protected $collection = 'media';
 
     public const TYPE_OTHER = 'other';
 
