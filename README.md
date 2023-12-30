@@ -1,10 +1,20 @@
 <p align="center"><img src="/art/socialcard.png" alt="Social Card of Laravel Media Library"></p>
 
+#### I created a new package by forking the Spatie Media Library package to be compatible with the official MongoDB package
+
+### to install the package
+
+``composer require niyazialpay/laravel-medialibrary-mongodb``
+### to publish the config file
+
+``php artisan vendor:publish --provider="niyazialpay\MediaLibrary\MediaLibraryServiceProvider" --tag="medialibrary-config"``
+
+### to publish the migrations
+
+``php artisan vendor:publish --provider="niyazialpay\MediaLibrary\MediaLibraryServiceProvider" --tag="medialibrary-migrations"``
+
 # Associate files with Eloquent models
 
-[![Latest Version](https://img.shields.io/github/release/spatie/laravel-medialibrary.svg?style=flat-square)](https://github.com/spatie/laravel-medialibrary/releases)
-[![run-tests](https://github.com/spatie/laravel-medialibrary/actions/workflows/run-tests.yml/badge.svg)](https://github.com/spatie/laravel-medialibrary/actions/workflows/run-tests.yml)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-medialibrary.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-medialibrary)
 
 This package can associate all sorts of files with Eloquent models. It provides a
 simple API to work with. To learn all about it, head over to [the extensive documentation](https://spatie.be/docs/laravel-medialibrary).
