@@ -3,7 +3,7 @@
 namespace niyazialpay\MediaLibrary\Support;
 
 use Illuminate\Support\Str;
-use niyazialpay\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class TemporaryDirectory
 {

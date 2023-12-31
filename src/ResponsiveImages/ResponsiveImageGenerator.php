@@ -14,7 +14,7 @@ use niyazialpay\MediaLibrary\Support\File;
 use niyazialpay\MediaLibrary\Support\FileNamer\FileNamer;
 use niyazialpay\MediaLibrary\Support\ImageFactory;
 use niyazialpay\MediaLibrary\Support\TemporaryDirectory;
-use niyazialpay\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
+use Spatie\TemporaryDirectory\TemporaryDirectory as BaseTemporaryDirectory;
 
 class ResponsiveImageGenerator
 {
