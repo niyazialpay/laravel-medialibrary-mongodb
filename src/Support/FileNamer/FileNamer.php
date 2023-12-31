@@ -2,6 +2,7 @@
 
 namespace niyazialpay\MediaLibrary\Support\FileNamer;
 
+use Illuminate\Support\Str;
 use niyazialpay\MediaLibrary\Conversions\Conversion;
 use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
@@ -13,7 +14,7 @@ abstract class FileNamer
 
         $baseName = substr($fileName, 0, strlen($fileName) - ($extLength ? $extLength + 1 : 0));
 
-        return $baseName;
+        return Str::slug($baseName);
     }
 
     abstract public function conversionFileName(string $fileName, Conversion $conversion): string;
