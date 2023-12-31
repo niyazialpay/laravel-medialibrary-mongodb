@@ -111,34 +111,34 @@ return [
      * the optimizers that will be used by default.
      */
     'image_optimizers' => [
-        niyazialpay\ImageOptimizer\Optimizers\Jpegoptim::class => [
+        Spatie\ImageOptimizer\Optimizers\Jpegoptim::class => [
             '-m85', // set maximum quality to 85%
             '--force', // ensure that progressive generation is always done also if a little bigger
             '--strip-all', // this strips out all text information such as comments and EXIF data
             '--all-progressive', // this will make sure the resulting image is a progressive one
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Pngquant::class => [
+        Spatie\ImageOptimizer\Optimizers\Pngquant::class => [
             '--force', // required parameter for this package
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Optipng::class => [
+        Spatie\ImageOptimizer\Optimizers\Optipng::class => [
             '-i0', // this will result in a non-interlaced, progressive scanned image
             '-o2', // this set the optimization level to two (multiple IDAT compression trials)
             '-quiet', // required parameter for this package
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Svgo::class => [
+        Spatie\ImageOptimizer\Optimizers\Svgo::class => [
             '--disable=cleanupIDs', // disabling because it is known to cause troubles
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Gifsicle::class => [
+        Spatie\ImageOptimizer\Optimizers\Gifsicle::class => [
             '-b', // required parameter for this package
             '-O3', // this produces the slowest but best results
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Cwebp::class => [
+        Spatie\ImageOptimizer\Optimizers\Cwebp::class => [
             '-m 6', // for the slowest compression method in order to get the best compression.
             '-pass 10', // for maximizing the amount of analysis pass.
             '-mt', // multithreading for some speed improvements.
             '-q 90', //quality factor that brings the least noticeable changes.
         ],
-        niyazialpay\ImageOptimizer\Optimizers\Avifenc::class => [
+        Spatie\ImageOptimizer\Optimizers\Avifenc::class => [
             '-a cq-level=23', // constant quality level, lower values mean better quality and greater file size (0-63).
             '-j all', // number of jobs (worker threads, "all" uses all available cores).
             '--min 0', // min quantizer for color (0-63).
