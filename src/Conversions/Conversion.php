@@ -4,7 +4,7 @@ namespace niyazialpay\MediaLibrary\Conversions;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\Conditionable;
-use niyazialpay\ImageOptimizer\OptimizerChainFactory;
+use Spatie\ImageOptimizer\OptimizerChainFactory;
 use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 use niyazialpay\MediaLibrary\Support\FileNamer\FileNamer;
 

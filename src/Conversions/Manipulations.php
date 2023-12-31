@@ -2,7 +2,7 @@
 
 namespace niyazialpay\MediaLibrary\Conversions;
 
-use niyazialpay\Image\Drivers\ImageDriver;
+use Spatie\Image\Drivers\ImageDriver;
 
 /** @mixin \niyazialpay\Image\Drivers\ImageDriver */
 class Manipulations

@@ -4,8 +4,8 @@ namespace niyazialpay\MediaLibrary\Conversions\Actions;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use niyazialpay\Image\Exceptions\UnsupportedImageFormat;
-use niyazialpay\Image\Image;
+use Spatie\Image\Exceptions\UnsupportedImageFormat;
+use Spatie\Image\Image;
 use niyazialpay\MediaLibrary\Conversions\Conversion;
 use niyazialpay\MediaLibrary\MediaCollections\Models\Media;
 
