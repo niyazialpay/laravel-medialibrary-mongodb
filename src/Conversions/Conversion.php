@@ -27,6 +27,8 @@ class Conversion
 
     protected bool $generateResponsiveImages = false;
 
+    protected ?WidthCalculator $widthCalculator = null;
+
     protected ?string $loadingAttributeValue;
 
     protected int $pdfPageNumber = 1;
@@ -188,6 +190,18 @@ class Conversion
         $this->generateResponsiveImages = true;
 
         return $this;
+    }
+
+    public function withWidthCalculator(WidthCalculator $widthCalculator): self
+    {
+        $this->widthCalculator = $widthCalculator;
+
+        return $this;
+    }
+
+    public function getWidthCalculator(): ?WidthCalculator
+    {
+        return $this->widthCalculator;
     }
 
     public function shouldGenerateResponsiveImages(): bool
