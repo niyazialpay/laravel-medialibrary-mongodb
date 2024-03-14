@@ -65,7 +65,7 @@
         "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
         "spatie/pdf-to-image": "Required for generating thumbnails of PDFs and SVGs"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
