@@ -38,7 +38,7 @@
         "spatie/laravel-package-tools": "^1.16.1",
         "spatie/temporary-directory": "^2.2",
         "symfony/console": "^6.4.1|^7.0",
-        "mongodb/laravel-mongodb": "^4.1"
+        "mongodb/laravel-mongodb": "^4.2"
     },
     "require-dev": {
         "ext-imagick": "*",
@@ -65,7 +65,7 @@
         "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
         "spatie/pdf-to-image": "Required for generating thumbnails of PDFs and SVGs"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
